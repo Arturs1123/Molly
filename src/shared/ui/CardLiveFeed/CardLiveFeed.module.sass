@@ -1,0 +1,53 @@
+.item
+  position: relative
+  border-radius: 4px
+  border: 2px solid rgba(255, 255, 255, 0.02)
+  padding: 2px
+  &.grey
+    background: linear-gradient(180deg, rgba(47, 55, 74, 0.25) 0%, rgba(35, 41, 58, 0.25) 100%),linear-gradient(140.14deg, rgba(20, 25, 37, 0) 53.41%, rgba(24, 182, 232, 0.65) 100%)
+  &.light-blue
+    background: linear-gradient(180deg, rgba(47, 55, 74, 0.25) 0%, rgba(35, 41, 58, 0.25) 100%),linear-gradient(140.14deg, rgba(20, 25, 37, 0) 53.41%, rgba(63, 72, 95, 0.65) 100%)
+  &.blue
+    background: linear-gradient(180deg, rgba(47, 55, 74, 0.25) 0%, rgba(35, 41, 58, 0.25) 100%),linear-gradient(140.14deg, rgba(20, 25, 37, 0) 53.41%, rgba(24, 57, 232, 0.65) 100%)
+  &.purple
+    background: linear-gradient(180deg, rgba(47, 55, 74, 0.25) 0%, rgba(35, 41, 58, 0.25) 100%),linear-gradient(140.14deg, rgba(20, 25, 37, 0) 53.41%, rgba(103, 24, 232, 0.65) 100%)
+  &.pink
+    background: linear-gradient(180deg, rgba(47, 55, 74, 0.25) 0%, rgba(35, 41, 58, 0.25) 100%),linear-gradient(140.14deg, rgba(20, 25, 37, 0) 53.41%, rgba(191, 24, 232, 0.65) 100%)
+  &.red
+    background: linear-gradient(180deg, rgba(47, 55, 74, 0.25) 0%, rgba(35, 41, 58, 0.25) 100%),linear-gradient(140.14deg, rgba(20, 25, 37, 0) 53.41%, rgba(180, 38, 72, 0.65) 100%)
+
+  &.yellow
+    background: linear-gradient(180deg, rgba(47, 55, 74, 0.25) 0%, rgba(35, 41, 58, 0.25) 100%),linear-gradient(140.14deg, rgba(20, 25, 37, 0) 53.41%, rgba(253, 205, 36, 0.65) 100%)
+
+  &_backdrop
+    z-index: 1
+    filter: saturate(145%)
+  &_inner
+    position: relative
+    z-index: 2
+    height: 100%
+    padding: 8px 5px
+    display: flex
+    align-items: center
+    flex-direction: column
+    gap: 2px
+  &_pic
+    width: 100%
+    img
+      width: 100%
+  &_title
+    flex-shrink: 0
+    width: 100%
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    font-size: 8px
+    align-self: start
+    @apply text-text-primary
+
+
+
+@media ( max-width: 768px )
+  .item
+    &_title
+      font-size: 6px
